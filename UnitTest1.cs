@@ -36,7 +36,8 @@ namespace UnitTestFlight
         /// <summary>
         /// The handler function
         /// </summary>
-        private readonly Func<HttpRequestMessage, CancellationToken, Task<HttpResponseMessage>> _handlerFunc;
+        private readonly Func<HttpRequestMessage, CancellationToken, 
+            Task<HttpResponseMessage>> _handlerFunc;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="DelegatingHandlerStub"/> class.
@@ -50,20 +51,23 @@ namespace UnitTestFlight
         /// Initializes a new instance of the <see cref="DelegatingHandlerStub"/> class.
         /// </summary>
         /// <param name="handlerFunc">The handler function.</param>
-        public DelegatingHandlerStub(Func<HttpRequestMessage, CancellationToken, Task<HttpResponseMessage>> handlerFunc)
+        public DelegatingHandlerStub(Func<HttpRequestMessage, CancellationToken,
+            Task<HttpResponseMessage>> handlerFunc)
         {
             _handlerFunc = handlerFunc;
         }
 
         /// <summary>
-        /// Sends an HTTP request to the inner handler to send to the server as an asynchronous operation.
+        /// Sends an HTTP request to the inner handler to send to the server 
+        /// as an asynchronous operation.
         /// </summary>
         /// <param name="request">The HTTP request message to send to the server.</param>
         /// <param name="cancellationToken">A cancellation token to cancel operation.</param>
         /// <returns>
         /// The task object representing the asynchronous operation.
         /// </returns>
-        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request,
+            CancellationToken cancellationToken)
         {
             return _handlerFunc(request, cancellationToken);
         }
@@ -94,7 +98,8 @@ namespace UnitTestFlight
             FlightPlanController controller = new FlightPlanController(memoryCache, factory);
             // Arrange
             var myContext = new Mock<HttpContext>();
-            myContext.SetupGet(x => x.Request.QueryString).Returns(new QueryString("?relative_to=" + DateTime.Now));
+            myContext.SetupGet(x => x.Request.QueryString).
+                Returns(new QueryString("?relative_to=" + DateTime.Now));
             var controllerContext = new ControllerContext()
             {
                 HttpContext = myContext.Object,
@@ -233,7 +238,8 @@ namespace UnitTestFlight
 
             // Arrange
             myContext = new Mock<HttpContext>();
-            myContext.SetupGet(x => x.Request.QueryString).Returns(new QueryString("?relative_to=" + DateTime.Now));
+            myContext.SetupGet(x => x.Request.QueryString).
+                Returns(new QueryString("?relative_to=" + DateTime.Now));
             controllerContext = new ControllerContext()
             {
                 HttpContext = myContext.Object,
@@ -250,7 +256,8 @@ namespace UnitTestFlight
             Assert.IsTrue(list.Result.Value.Count == 1);
 
             // Act
-            Task<ActionResult<FlightPlan>> answer = controller.GetFlightPlanById(list.Result.Value[0].flight_id);
+            Task<ActionResult<FlightPlan>> answer = 
+                controller.GetFlightPlanById(list.Result.Value[0].flight_id);
 
             // Assert
             Assert.AreEqual(answer.Result.Value, flightPlan);

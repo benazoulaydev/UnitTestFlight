@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\UnitTestFlight.csproj": {}
+    "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\UnitTestFlight\\UnitTestFlight.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj": {
+    "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\FlightControl\\FlightControlWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj",
+        "projectUniqueName": "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\FlightControl\\FlightControlWeb.csproj",
         "projectName": "FlightControlWeb",
-        "projectPath": "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj",
-        "packagesPath": "C:\\Users\\benaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benaz\\source\\repos\\FlightControl\\obj\\",
+        "projectPath": "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\FlightControl\\FlightControlWeb.csproj",
+        "packagesPath": "C:\\Users\\kfiry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\FlightControl\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\benaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kfiry\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,24 +69,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\UnitTestFlight.csproj": {
+    "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\UnitTestFlight\\UnitTestFlight.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\UnitTestFlight.csproj",
+        "projectUniqueName": "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\UnitTestFlight\\UnitTestFlight.csproj",
         "projectName": "UnitTestFlight",
-        "projectPath": "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\UnitTestFlight.csproj",
-        "packagesPath": "C:\\Users\\benaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\obj\\",
+        "projectPath": "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\UnitTestFlight\\UnitTestFlight.csproj",
+        "packagesPath": "C:\\Users\\kfiry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\UnitTestFlight\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\benaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kfiry\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,8 +96,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj": {
-                "projectPath": "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj"
+              "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\FlightControl\\FlightControlWeb.csproj": {
+                "projectPath": "C:\\Users\\kfiry\\source\\repos\\benazoulaydev\\FlightControl\\FlightControlWeb.csproj"
               }
             }
           }
@@ -152,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
