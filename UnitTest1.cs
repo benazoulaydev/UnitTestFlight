@@ -92,7 +92,17 @@ namespace UnitTestFlight
 
             Mock<IMemoryCache> cache = new Mock<IMemoryCache>();
             FlightPlanController controller = new FlightPlanController(memoryCache, factory);
-
+            // Arrange
+            var myContext = new Mock<HttpContext>();
+            myContext.SetupGet(x => x.Request.QueryString).Returns(new QueryString("?relative_to=" + DateTime.Now));
+            var controllerContext = new ControllerContext()
+            {
+                HttpContext = myContext.Object,
+            };
+            controller = new FlightPlanController(memoryCache, factory)
+            {
+                ControllerContext = controllerContext,
+            };
             // Act
             var actionResult = controller.GetFlightsByDateAsync(DateTime.Now);
 

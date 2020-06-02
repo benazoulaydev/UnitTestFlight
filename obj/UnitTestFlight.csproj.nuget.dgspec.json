@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\UnitTestFlight\\UnitTestFlight.csproj": {}
+    "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\UnitTestFlight.csproj": {}
   },
   "projects": {
-    "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\FlightControl\\FlightControlWeb.csproj": {
+    "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\FlightControl\\FlightControlWeb.csproj",
+        "projectUniqueName": "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj",
         "projectName": "FlightControlWeb",
-        "projectPath": "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\FlightControl\\FlightControlWeb.csproj",
+        "projectPath": "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj",
         "packagesPath": "C:\\Users\\benaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\FlightControl\\obj\\",
+        "outputPath": "C:\\Users\\benaz\\source\\repos\\FlightControl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\UnitTestFlight\\UnitTestFlight.csproj": {
+    "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\UnitTestFlight.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\UnitTestFlight\\UnitTestFlight.csproj",
+        "projectUniqueName": "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\UnitTestFlight.csproj",
         "projectName": "UnitTestFlight",
-        "projectPath": "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\UnitTestFlight\\UnitTestFlight.csproj",
+        "projectPath": "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\UnitTestFlight.csproj",
         "packagesPath": "C:\\Users\\benaz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\UnitTestFlight\\obj\\",
+        "outputPath": "C:\\Users\\benaz\\source\\repos\\UnitTestFlight\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -102,8 +102,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\FlightControl\\FlightControlWeb.csproj": {
-                "projectPath": "C:\\Users\\benaz\\OneDrive\\Desktop\\FlightControl\\FlightControl\\FlightControlWeb.csproj"
+              "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj": {
+                "projectPath": "C:\\Users\\benaz\\source\\repos\\FlightControl\\FlightControlWeb.csproj"
               }
             }
           }
@@ -145,6 +145,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
